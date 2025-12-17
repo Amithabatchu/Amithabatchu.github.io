@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Amitha Batchu | Data Scientist & Software Engineer</title>
+  <meta name="description" content="Amitha Batchu - Data Scientist | Software Engineer. ML, backend systems, APIs, cloud, and production-ready AI." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Ambient background -->
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="brand-dot"></span>
+      <span>Amitha Batchu</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="top-actions">
+      <button id="themeBtn" class="btn ghost" aria-label="Toggle theme">
+        <span class="icon">☾</span>
+        <span class="hide-sm">Theme</span>
+      </button>
+      <a class="btn neon" href="https://github.com/Amithabatchu" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="chip">Cyber Dark • Recruiter-Friendly • ATS Keywords</div>
+        <h1>
+          <span class="glow">Amitha Batchu</span><br/>
+          <span class="muted">Data Scientist | Software Engineer</span>
+        </h1>
+
+        <p class="lead">
+          Data Scientist | Software Engineer with 4+ years of experience in data analysis, machine learning, backend development,
+          and system design, proficient in Python, SQL, ML pipelines, REST APIs, and cloud technologies.
+        </p>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-label">Location</span>
+            <span class="meta-value">Any City, USA</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Open to</span>
+            <span class="meta-value">Full-time roles</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Email</span>
+            <span class="meta-value"><a href="mailto:batchuamitha@gmail.com">batchuamitha@gmail.com</a></span>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn neon" href="#projects">Explore Projects</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/amithabatchu" target="_blank" rel="noreferrer">LinkedIn</a>
+          <button class="btn ghost" id="copyEmailBtn" type="button">Copy Email</button>
+        </div>
+
+        <div class="quick-badges">
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Machine Learning</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">AWS • Azure • GCP</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="terminal">
+          <div class="terminal-top">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="terminal-title">recruiter_scan.sh</span>
+          </div>
+          <pre class="terminal-body"><code id="typeTarget"></code></pre>
+          <div class="terminal-foot">
+            <span class="kbd">Enter</span>
+            <span class="muted">Tip: Use filters below to browse projects quickly</span>
+          </div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Years Data Science</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Years Software Eng</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Highlighted Projects</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">Hover cards for quick impact, click links for code/demo.</p>
+      </div>
+
+      <div class="filters">
+        <button class="chipbtn active" data-filter="all">All</button>
+        <button class="chipbtn" data-filter="ml">ML / Deep Learning</button>
+        <button class="chipbtn" data-filter="genai">Generative AI</button>
+        <button class="chipbtn" data-filter="web">Web / Product</button>
+        <button class="chipbtn" data-filter="deploy">Deployment</button>
+      </div>
+
+      <div class="cards" id="projectCards">
+        <!-- LIA -->
+        <article class="card" data-tags="ml genai">
+          <div class="card-top">
+            <h3>Latent Image Animator (LIA)</h3>
+            <span class="tag">PyTorch</span>
+            <span class="tag">GANs / VAEs</span>
+            <span class="tag">Generative Modeling</span>
+          </div>
+          <p>
+            Developed a deep generative model for animating static images via latent space navigation.
+            Engineered orthogonal motion directions to control head rotation, facial expressions, and gesture synthesis.
+            Optimized the training pipeline to reduce convergence time by 20%. Built from scratch for training purposes.
+          </p>
+          <div class="card-kpis">
+            <div><span class="k">Impact</span><span class="v">↓ 20% convergence time</span></div>
+            <div><span class="k">Focus</span><span class="v">Controllable motion synthesis</span></div>
+          </div>
+          <div class="card-actions">
+            <a class="btn small ghost" href="https://github.com/Amithabatchu" target="_blank" rel="noreferrer">GitHub Profile</a>
+            <button class="btn small neon openModal" data-title="LIA Highlights" data-body="Key work: latent space navigation, orthogonal directions for controllable motion, optimized training workflow, and experimentation for facial expression & gesture synthesis.">Highlights</button>
+          </div>
+        </article>
+
+        <!-- HAR -->
+        <article class="card" data-tags="ml deploy">
+          <div class="card-top">
+            <h3>Deep Learning-Based Human Activity Recognition</h3>
+            <span class="tag">Python</span>
+            <span class="tag">CNN-LSTM</span>
+            <span class="tag">Edge Deployment</span>
+          </div>
+          <p>
+            Built a CNN-LSTM hybrid model to classify human activities from sensor data.
+            Improved computational efficiency by 30% to enable deployment on low-resource edge devices.
+            Applied pruning and quantization to reduce model size by 40% while maintaining accuracy.
+            Enabled real-time classification on wearables using hyperparameter tuning and GPU acceleration.
+          </p>
+          <div class="card-kpis">
+            <div><span class="k">Impact</span><span class="v">↑ 30% efficiency</span></div>
+            <div><span class="k">Size</span><span class="v">↓ 40% model size</span></div>
+          </div>
+          <div class="card-actions">
+            <a class="btn small ghost" href="https://github.com/Amithabatchu" target="_blank" rel="noreferrer">GitHub Profile</a>
+            <button class="btn small neon openModal" data-title="HAR Highlights" data-body="Key work: CNN-LSTM pipeline, pruning + quantization, edge-ready optimization, real-time inference focus, GPU tuning, and evaluation for wearable deployment.">Highlights</button>
+          </div>
+        </article>
+
+        <!-- AI Study Buddy -->
+        <article class="card" data-tags="web ml">
+          <div class="card-top">
+            <h3>AI Study Buddy Website (Real-Time Project)</h3>
+            <span class="tag">Web App</span>
+            <span class="tag">AI/ML</span>
+            <span class="tag">Product</span>
+          </div>
+          <p>
+            Built a real-time study assistant web application to help students learn faster using AI-driven workflows.
+            Designed for interactive learning: topic-based support, smart guidance, and a user-friendly experience.
+            Focused on practical usability, clean UI, and scalable structure for future AI feature expansion.
+          </p>
+          <div class="card-kpis">
+            <div><span class="k">Focus</span><span class="v">Real-time learning assistance</span></div>
+            <div><span class="k">Goal</span><span class="v">Scalable product foundation</span></div>
+          </div>
+          <div class="card-actions">
+            <a class="btn small neon" href="https://github.com/Amithabatchu/AI-Study-Budyy-Website.git" target="_blank" rel="noreferrer">View Repo</a>
+            <button class="btn small ghost openModal" data-title="AI Study Buddy (More Info)" data-body="Real-time project focused on delivering an AI-powered learning companion. Emphasis on usability and extensibility: clean modular structure, feature-ready architecture, and an interactive experience that can integrate quizzes, content help, and personalized recommendations.">More Info</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Mandatory skills recruiters expect (Software Engineer + Data Scientist).</p>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <h3>Software Engineer — Mandatory</h3>
+          <div class="skill-grid">
+            <span class="pill">Python / Java / C++ / JavaScript</span>
+            <span class="pill">Data Structures & Algorithms</span>
+            <span class="pill">OOP</span>
+            <span class="pill">Problem Solving & Debugging</span>
+            <span class="pill">Git / GitHub</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">Backend Frameworks (Django/Flask/Spring/Node)</span>
+            <span class="pill">Databases (MySQL/PostgreSQL)</span>
+            <span class="pill">System Design</span>
+            <span class="pill">AuthN/AuthZ (JWT/OAuth)</span>
+            <span class="pill">Testing (Unit/Integration)</span>
+            <span class="pill">CI/CD</span>
+            <span class="pill">Agile/Scrum</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Linux/CLI</span>
+            <span class="pill">Cloud (AWS/GCP/Azure)</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Data Scientist — Mandatory</h3>
+          <div class="skill-grid">
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Pandas / NumPy</span>
+            <span class="pill">Data Cleaning</span>
+            <span class="pill">EDA</span>
+            <span class="pill">Statistics & Probability</span>
+            <span class="pill">Hypothesis Testing</span>
+            <span class="pill">Feature Engineering</span>
+            <span class="pill">ML (Supervised/Unsupervised)</span>
+            <span class="pill">scikit-learn</span>
+            <span class="pill">Model Evaluation (AUC, F1, etc.)</span>
+            <span class="pill">Tuning / Cross-validation</span>
+            <span class="pill">Visualization (Matplotlib/Seaborn)</span>
+            <span class="pill">Power BI / Tableau</span>
+            <span class="pill">ML Pipelines</span>
+            <span class="pill">Deployment (Flask/FastAPI)</span>
+            <span class="pill">Deep Learning (TensorFlow/PyTorch)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel mt">
+        <h3>Tools & Platforms (from your experience)</h3>
+        <div class="skill-grid">
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">NumPy</span>
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">TensorFlow</span>
+          <span class="pill">PyTorch</span>
+          <span class="pill">Matplotlib</span>
+          <span class="pill">Seaborn</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">MySQL</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">MongoDB</span>
+          <span class="pill">AWS</span>
+          <span class="pill">Azure</span>
+          <span class="pill">GCP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p class="muted">Outcome-focused, recruiter-readable, ATS-friendly.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="titem">
+          <div class="tline"></div>
+          <div class="tcard">
+            <div class="tmeta">
+              <h3>Quixy — Data Scientist</h3>
+              <span class="badge">May 2022 – Jul 2024</span>
+            </div>
+            <ul class="bullets">
+              <li>Data collection & cleaning from databases/APIs/logs; prepared analysis-ready datasets for modeling.</li>
+              <li>Performed EDA to identify patterns, trends, and anomalies using statistics + visualizations.</li>
+              <li>Built ML models (classification, regression, clustering, forecasting) and optimized performance.</li>
+              <li>Conducted feature engineering and model evaluation to improve accuracy and reliability.</li>
+              <li>Translated model results into business insights for stakeholders and decision-making.</li>
+              <li>Deployed and monitored models; collaborated with PMs/engineers/business teams across sprints.</li>
+            </ul>
+            <div class="mini">
+              <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">scikit-learn</span>
+              <span class="tag">TensorFlow/PyTorch</span><span class="tag">AWS/Azure/GCP</span><span class="tag">Power BI/Tableau</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="titem">
+          <div class="tline"></div>
+          <div class="tcard">
+            <div class="tmeta">
+              <h3>Vixspace — Software Engineer</h3>
+              <span class="badge">Sep 2020 – May 2022</span>
+            </div>
+
+            <div class="split">
+              <div class="subpanel">
+                <h4>Year 1 — Core Engineering & Platform Development</h4>
+                <ul class="bullets">
+                  <li>Developed and enhanced backend services for a SaaS workflow automation platform.</li>
+                  <li>Built REST APIs for authentication, role-based access control, and workflow execution.</li>
+                  <li>Implemented frontend components for no-code builder and drag-and-drop UI features.</li>
+                  <li>Integrated databases to handle app metadata, user configurations, and workflow data.</li>
+                  <li>Fixed bugs, optimized performance, improved scalability; participated in agile sprints & code reviews.</li>
+                </ul>
+              </div>
+
+              <div class="subpanel">
+                <h4>Year 2 — Advanced Engineering & Platform Intelligence</h4>
+                <ul class="bullets">
+                  <li>Designed and implemented scalable microservices and optimized workflow execution engines.</li>
+                  <li>Improved system performance for high-concurrency enterprise users and large-scale processing.</li>
+                  <li>Built connectors/integrations (CRM/ERP/cloud services) and implemented security best practices.</li>
+                  <li>Worked on OAuth, JWT, encryption, and compliance considerations (SOC2/GDPR).</li>
+                  <li>Collaborated with data scientists to integrate AI/ML features; mentored junior engineers.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mini">
+              <span class="tag">REST APIs</span><span class="tag">Microservices</span><span class="tag">System Design</span>
+              <span class="tag">OAuth/JWT</span><span class="tag">Cloud-native</span><span class="tag">Agile/DevOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-top">
+            <h3>University of North Carolina at Charlotte</h3>
+            <span class="tag">Master’s in Computer Science</span>
+            <span class="tag">GPA 3.77</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Vignan University</h3>
+            <span class="tag">Bachelor’s in Computer Science and Engineering</span>
+            <span class="tag">GPA 3.66</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Let’s connect for full-time roles.</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-left">
+          <h3>Amitha Batchu</h3>
+          <p class="muted">Data Scientist | Software Engineer</p>
+          <div class="contact-links">
+            <a class="btn neon" href="mailto:batchuamitha@gmail.com">Email</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/amithabatchu" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/Amithabatchu" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="return false;">
+          <label>
+            <span>Name</span>
+            <input id="nameInput" placeholder="Your name" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea id="msgInput" rows="4" placeholder="Write your message..."></textarea>
+          </label>
+          <button class="btn neon" id="mailBtn" type="button">Open Email Draft</button>
+          <p class="tiny muted">This opens your email app with a pre-filled draft (no server needed).</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Amitha Batchu</span>
+      <span class="muted">Cyber Dark • Built for GitHub Pages</span>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="modalTitle">Title</h3>
+        <button class="btn ghost small" id="closeModal" aria-label="Close">✕</button>
+      </div>
+      <p id="modalBody" class="muted"></p>
+      <div class="modal-actions">
+        <button class="btn neon" id="okModal">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
